@@ -1,0 +1,68 @@
+{
+	"nelfkyorlin" :
+	{
+		"class" : "nelfhunter",
+		"female" : true,
+		
+		"texts" :
+		{
+			"name" : "凯拉",
+			"biography" : "凯拉指挥箭塔非常出色，射杀了无数攻城者。",
+			"specialty" :
+			{
+				"description" : "在箭术上每级获得5%的提升，。",
+				"tooltip" : "技能加成：箭术",
+				"name" : "箭术达人"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/kyorlin/un32drud.bmp",
+			"specialtyLarge" : "nightelf/heroes/kyorlin/un44drud.bmp",
+			"large" : "nightelf/heroes/kyorlin/hpl284.bmp",
+			"small" : "nightelf/heroes/kyorlin/hps284.bmp"
+		},
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		"specialty" : {
+		"bonuses" : {
+				"archery" : {
+					"subtype" : "damageTypeRanged",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}		
+	}
+}

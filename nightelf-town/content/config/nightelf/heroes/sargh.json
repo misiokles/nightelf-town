@@ -1,0 +1,73 @@
+{
+	"nelfsargh" :
+	{
+		"class" : "nelfhunter",
+		"female" : false,
+	
+		"texts" :
+		{
+			"name" : "瑟瑞",
+			"biography" : "只要一看见瑟瑞的战旗，即使无望战斗的人也会斗志昂扬。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1木材和1矿石。",
+				"tooltip" : "每天+1木材和矿石",
+				"name" : "+1木材和矿石"
+			}
+		},
+	
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/sargh/Un32WdOr.bmp",
+			"specialtyLarge" : "nightelf/heroes/sargh/Un44WdOr.bmp",
+			"large" : "nightelf/heroes/sargh/hpl291.bmp",
+			"small" : "nightelf/heroes/sargh/hps291.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+		"bonuses" : {
+			"wood" : {
+						"type": "GENERATE_RESOURCE",
+						"subtype": "resource.wood",
+						"val": 1
+					},					
+			"ore" : {
+						"type": "GENERATE_RESOURCE",
+						"subtype": "resource.ore",
+						"val": 1
+					}
+				}
+	    }
+	}
+}

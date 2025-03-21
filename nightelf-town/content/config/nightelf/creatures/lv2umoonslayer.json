@@ -1,0 +1,103 @@
+{
+	"nelfmoonslayer":
+	{
+		"name" :
+		{
+			"plural" : "缚夜影猎",
+			"singular" : "缚夜影猎"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "nightelf",
+		"aiValue" : 263,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 180
+		},
+		"damage" :
+		{
+			 "max" : 8,
+			 "min" : 3
+		},
+		"defense" : 5,
+		"fightValue" : 272,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR282.def",
+			"map" : "nightelf/map/avw282.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS282G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL282G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "nightelf/battle/projectile/shot281.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 7,
+		"hitPoints" : 15,
+		"level" : 2,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack" : "nightelf/hunter/huntattk.wav",
+			"defend" : "nightelf/hunter/huntdfnd.wav",
+			"killed" : "nightelf/hunter/huntkill.wav",
+			"move" : "nightelf/hunter/huntmove.wav",
+			"wince" : "nightelf/hunter/huntwnce.wav",
+			"shoot" : "nightelf/hunter/huntshot.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"rangedRetaliation": 
+			{ 
+			    "type": "RANGED_RETALIATION" 
+			},
+			"freeshooting" :
+			{
+				"type" : "FREE_SHOOTING"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"blockAttack" :
+			{
+				"type" : "GENERAL_ATTACK_REDUCTION",
+				"val" : 20
+			},
+			"spellPoison" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 50,
+				"addInfo" : [1, 1]				
+			}
+		}
+	}
+}

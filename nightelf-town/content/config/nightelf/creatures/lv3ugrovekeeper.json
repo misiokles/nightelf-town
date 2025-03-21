@@ -1,0 +1,92 @@
+{
+	"nelfnightelfkeeper":
+	{
+		"name" :
+		{
+			"plural" : "暗夜骑士",
+			"singular" : "暗夜骑士"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "nightelf",
+		"aiValue" : 362,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 300
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 6,
+		"fightValue" : 360,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR284.def",
+			"map" : "nightelf/map/AvW284.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS284G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL284G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "nightelf/battle/projectile/shot283.def",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}			
+		},
+		"doubleWide" : true,
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack" : "nightelf/keeper/gkprattk.wav",
+			"defend" : "nightelf/keeper/gkprdfnd.wav",
+			"killed" : "nightelf/keeper/gkprkill.wav",
+			"move" : "nightelf/keeper/gkprmove.wav",
+			"wince" : "nightelf/keeper/gkprwnce.wav",
+			"shoot" : "nightelf/keeper/gkprshot.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"strikeAndReturn" :
+			{
+				"type" : "RETURN_AFTER_STRIKE"
+			},
+			"additionalAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"dispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 100,
+				"addInfo" : [1, 1]
+			}
+		}
+	}
+}

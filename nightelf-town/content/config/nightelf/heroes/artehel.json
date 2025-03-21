@@ -1,0 +1,59 @@
+{
+	"nelfartehel" :
+	{
+		"class" : "nelfhunter",
+		"female" : false,
+		
+		"texts" :
+		{
+			"name" : "阿特希尔",
+			"biography" : "阿特希尔是自己决定生活在人类世界的树精。尽管森林几乎每天都在呼唤他，但他拒绝回去。相反地，他想通过召唤强大的暗夜树芒，将森林的力量分享给人类世界。",
+			"specialty" :
+			{
+				"description" : "初始掌握召唤暗夜树芒魔法。",
+				"tooltip" : "暗夜树芒",
+				"name" : "暗夜树芒"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/artehel/un32drud.bmp",
+			"specialtyLarge" : "nightelf/heroes/artehel/un44drud.bmp",
+			"large" : "nightelf/heroes/artehel/hPL119BS.bmp",
+			"small" : "nightelf/heroes/artehel/hPS119BS.bmp"
+		},
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		"spellbook": ["spell.summonNelftreebeard"],
+		"specialty" : {}		
+	}
+}

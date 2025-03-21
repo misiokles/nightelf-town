@@ -1,0 +1,100 @@
+{
+	"nelfspiderprincess":
+	{
+		"name" :
+		{
+			"plural" : "银月猎手",
+			"singular" : "银月猎手"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "nightelf",
+		"aiValue" : 1381,
+		"attack" : 16,
+		"cost" :
+		{
+			"gold" : 900
+		},
+		"damage" :
+		{
+			 "max" : 18,
+			 "min" : 15
+		},
+		"defense" : 14,
+		"fightValue" : 1231,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR289.DEF",
+			"map" : "nightelf/map/AVW289.def",
+			"iconSmall" : "nightelf/iconsSmall/CPRS289G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL289G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "nightelf/battle/projectile/shot283.def",
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"doubleWide" : true,
+		"growth" : 2,
+		"hitPoints" : 70,
+		"level" : 6,
+		"shots" : 12,
+		"upgrades":
+		[
+			"nelfspiderqueen"
+		],
+		"sound" :
+		{
+			"attack" : "nightelf/spider/spidattk.wav",
+			"defend" : "nightelf/spider/spiddfnd.wav",
+			"killed" : "nightelf/spider/spidkill.wav",
+			"move" : "nightelf/spider/spidmove.wav",
+			"wince" : "nightelf/spider/spidwnce.wav",
+			"shoot" : "nightelf/spider/spidshot.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"canShoot2": 
+			{  
+			    "type": "SHOOTS_ALL_ADJACENT"
+			},
+			"castsDispelHelpful" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 1, //basic level
+				"addInfo" : 5 //cooldown turns
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 5
+			}
+		}
+	}
+}

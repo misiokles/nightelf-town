@@ -1,0 +1,94 @@
+{
+	"nelftreebeard":
+	{
+		"name" :
+		{
+			"plural" : "暗夜树芒",
+			"singular" : "暗夜树芒"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "nightelf",
+		"aiValue" : 1612,
+		"attack" : 10,
+		"cost" :
+		{
+			"gold" : 3500,
+			"crystal" : 2
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 15
+		},
+		"defense" : 18,
+		"fightValue" : 1378,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/Drzewobrodzi.DEF",
+			"map" : "nightelf/map/DrzewobrodziS.def",
+			"iconSmall" : "nightelf/iconsSmall/DrzewobrodziS.bmp",
+			"iconLarge" : "nightelf/iconsBig/Drzewobrodzi.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"growth" : 1,
+		"hitPoints" : 100,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "BTREATTK.wav",
+			"defend": "BTREDFND.wav",
+			"killed": "BTREKILL.wav",
+			"move": "BTREMOVE.wav",
+			"wince": "BTREWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"spellParalyze" :
+			{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.paralyze",
+					"addInfo" : [1, 0],
+					"val" : 20
+			},
+			"regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 30
+			},
+			"castsCure" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.cure",
+				"val" : 3,
+				"addInfo" : 3
+			},
+			"rebirth" : 
+			{
+				"type" : "REBIRTH",
+				"val" : 15
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 20
+			},
+			"damageReduction": 
+			{
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 15
+			}
+		}
+	}
+}

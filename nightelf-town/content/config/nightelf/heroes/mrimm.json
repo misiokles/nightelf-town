@@ -1,0 +1,73 @@
+{
+	"nelfmrimm" :
+	{
+		"class" : "nelfhunter",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "玛利姆",
+			"biography" : "玛利姆是一个孤儿。他努力修习锻造学，成为了一名出色的铁匠。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：后勤学",
+				"name" : "后勤学"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/mrimm/un32logi.bmp",
+			"specialtyLarge" : "nightelf/heroes/mrimm/un44logi.bmp",
+			"large" : "nightelf/heroes/mrimm/hpl285.bmp",
+			"small" : "nightelf/heroes/mrimm/hps285.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}
+
+
+

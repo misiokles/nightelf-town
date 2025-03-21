@@ -1,0 +1,67 @@
+{
+	"nelfultrin" :
+	{
+		"class" : "nelfhunter",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "乌尔汀",
+			"biography" : "在一场边界战争中，以泰泽为首的一支小部队竟然能够在泰塔利亚前哨顶住敌方五倍兵力的猛攻，直到援军到来。乌尔汀是泰泽最有天赋的学生。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：防御术",
+				"name" : "防御术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/ultrin/Un32Defe.bmp",
+			"specialtyLarge" : "nightelf/heroes/ultrin/Un44Defe.bmp",
+			"large" : "nightelf/heroes/ultrin/hpl287.bmp",
+			"small" : "nightelf/heroes/ultrin/hps287.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "armorer"
+			}
+		],
+		"specialty": 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

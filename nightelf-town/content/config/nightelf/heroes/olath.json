@@ -1,0 +1,72 @@
+{
+	"nelfolath" :
+	{
+		"class" : "nelfwarden",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "奥拉斯",
+			"biography" : "奥拉斯擅长贸易，与很多人交易，包括亡灵巫师，而且他越来越冒险。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1水晶。",
+				"tooltip" : "特殊奖励：贸易大师",
+				"name" : "贸易大师"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/olath/un32crys.bmp",
+			"specialtyLarge" : "nightelf/heroes/olath/un44crys.bmp",
+			"large" : "nightelf/heroes/olath/hpl299.bmp",
+			"small" : "nightelf/heroes/olath/hps299.bmp"
+		},
+
+		"spellbook" :
+		[
+			"viewAir" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

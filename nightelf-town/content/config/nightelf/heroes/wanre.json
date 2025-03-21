@@ -1,0 +1,72 @@
+{
+	"nelfwanre" :
+	{
+		"class" : "nelfwarden",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "沃纳尔",
+			"biography" : "虽然没有优秀的魔法天赋，但沃纳尔可以召唤丛林中的生物使他在战斗中稳操胜券。",
+			"specialty" :
+			{
+				"description" : "可以在施法时降低2点魔法消耗，最少为1点。",
+				"tooltip" : "特殊奖励：萨满术",
+				"name" : "萨满术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/wanre/UN32Summ.bmp",
+			"specialtyLarge" : "nightelf/heroes/wanre/UN44Summ.bmp",
+			"large" : "nightelf/heroes/wanre/hpl294.bmp",
+			"small" : "nightelf/heroes/wanre/hps294.bmp"
+		},
+
+		"spellbook" :
+		[
+			"slow"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"reduceSpellCost" : 
+				{
+					"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+					"val" :  2
+				}
+			}
+		}
+	}
+}

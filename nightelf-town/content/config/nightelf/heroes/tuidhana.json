@@ -1,0 +1,76 @@
+{
+	"nelftuidhana" :
+	{
+		"class" : "nelfwarden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "图德哈娜",
+			"biography" : "图德哈娜是暗夜精灵王国的创始人和唯一统治者，她拥有敏锐的头脑与优秀的学习能力，学习各种各样的知识，甚至是敌人的。并用学到的东西去保卫暗夜精灵。",
+			"specialty" :
+			{
+				"description" : "所带领的所有生物速度+1。",
+				"tooltip" : "特殊奖励：急行军",
+				"name" : "急行军"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/tuidhana/Un32Fmag",
+			"specialtyLarge" : "nightelf/heroes/tuidhana/Un44Fmag",
+			"large" : "nightelf/heroes/tuidhana/hpl300.bmp",
+			"small" : "nightelf/heroes/tuidhana/hps300.bmp",
+		},
+
+		"spellbook" :
+		[
+			"viewAir"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}
+
+
+
+

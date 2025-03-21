@@ -1,0 +1,79 @@
+{
+	"nelfvelkyn" :
+	{
+		"class" : "nelfwarden",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "威肯",
+			"biography" : "威肯在一场黑暗仪式中失明。他现在居住在黑暗的洞穴中，但经常被召回来创造黑幕。",
+			"specialty" :
+			{
+				"description" : "创建半径为3的黑暗天幕，并在使用双目失明魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "特殊奖励：黑雾",
+				"name" : "黑雾"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/velkyn/UN32Dark.bmp",
+			"specialtyLarge" : "nightelf/heroes/velkyn/UN44Dark.bmp",
+			"large" : "nightelf/heroes/velkyn/hpl296.bmp",
+			"small" : "nightelf/heroes/velkyn/hps296.bmp",
+		},
+
+		"spellbook" :
+		[
+			"haste",
+			"blind" 
+		],
+		
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"blind" : {
+					"subtype" : "spell.blind",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				},
+				"darkness" :{
+					"type" : "DARKNESS",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+
+

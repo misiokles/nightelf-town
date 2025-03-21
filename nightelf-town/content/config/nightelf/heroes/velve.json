@@ -1,0 +1,71 @@
+{
+	"nelfvelve" :
+	{
+		"class" : "nelfhunter",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "维奥夫",
+			"biography" : "维奥夫是一个流浪的德鲁伊，但他在传送魔法方面的天赋折服了暗夜精灵。",
+			"specialty" :
+			{
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加1。",
+				"tooltip" : "特殊奖励：战争狂人",
+				"name" : "战争狂人"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/velve/UN32Blsh.bmp",
+			"specialtyLarge" : "nightelf/heroes/velve/UN44Blsh.bmp",
+			"large" : "nightelf/heroes/velve/hpl298.bmp",
+			"small" : "nightelf/heroes/velve/hps298.bmp",
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			}
+		],
+		"specialty": //+1 dmg
+			{
+				"bonuses":{
+				"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType" : "BASE_NUMBER"
+					}
+				}
+			}
+	}
+}
+
+

@@ -1,0 +1,91 @@
+{
+	"nelfnightelfguard":
+	{
+		"name" :
+		{
+			"plural" : "暗夜骑兵",
+			"singular" : "暗夜骑兵"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "nightelf",
+		"aiValue" : 293,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 6,
+		"fightValue" : 300,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR283.def",
+			"map" : "nightelf/map/AvW283.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS283G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL283G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "nightelf/battle/projectile/shot283.def",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}	
+        },
+		"doubleWide" : true,
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"shots" : 12,
+		"upgrades":
+		[
+			"nelfnightelfkeeper"
+		],
+		"sound" :
+		{
+			"attack" : "nightelf/dryad/dryaattk.wav",
+			"defend" : "nightelf/dryad/dryadfnd.wav",
+			"killed" : "nightelf/dryad/dryakill.wav",
+			"move" : "nightelf/dryad/dryamove.wav",
+			"wince" : "nightelf/dryad/dryawnce.wav",
+			"shoot" : "nightelf/dryad/dryashot.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"strikeAndReturn" :
+			{
+				"type" : "RETURN_AFTER_STRIKE"
+			},
+			"spellDispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 100,
+				"addInfo" : [1,1]
+			}
+		}
+	}
+}

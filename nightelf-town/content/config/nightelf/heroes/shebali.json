@@ -1,0 +1,61 @@
+{
+	"nelfshebali" :
+	{
+		"class" : "nelfhunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "萨巴利",
+			"biography" : "萨巴利小时候喜爱盗窃，最后被失主杀了家人。如今她努力练习掌控多个武器，而且小有成就。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高影猎和缚夜影猎的攻击力与防御力。",
+				"tooltip" : "生物强化：影猎",
+				"name" : "影猎"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/shebali/un32hunt.bmp",
+			"specialtyLarge" : "nightelf/heroes/shebali/un44hunt.bmp",
+			"large" : "nightelf/heroes/shebali/hpl286.bmp",
+			"small" : "nightelf/heroes/shebali/hps286.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			}
+		],
+		"specialty" : {
+			"creature" : "nelfmoonhunter"
+		}		
+	}
+}

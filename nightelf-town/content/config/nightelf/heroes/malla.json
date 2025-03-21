@@ -1,0 +1,66 @@
+{
+	"nelfmalla" :
+	{
+		"class" : "nelfhunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "马拉",
+			"biography" : "马拉用她优秀的工程经验创造了各种战争机器。",
+			"specialty" :
+			{
+				"description" : "初始自带夜隼车和补给车。",
+				"tooltip" : "特殊奖励：工程师",
+				"name" : "工程师"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/malla/un32Engi.bmp",
+			"specialtyLarge" : "nightelf/heroes/malla/un44Engi.bmp",
+			"large" : "nightelf/heroes/malla/hpl289.bmp",
+			"small" : "nightelf/heroes/malla/hps289.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelfnightFalcon",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "ammoCart",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			}
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "ballistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}		
+		],
+			
+		"specialty": //ballista
+		{
+		}
+	}
+}

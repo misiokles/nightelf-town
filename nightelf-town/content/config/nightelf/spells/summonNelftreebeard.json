@@ -1,0 +1,78 @@
+{
+	"summonNelftreebeard":
+	{
+		"type": "combat", 
+		"targetType": "NO_TARGET", 
+		"name": "召唤暗夜树芒",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 1,		
+		"defaultGainChance": 2,
+		"gainChance":
+		{
+			"nightelf" : 8,
+			"fortress" : 5,
+			"rampart" : 4
+		},		
+		"flags" : 
+		{
+			"indifferent": true
+        }, 
+		"graphics":
+		{
+			"iconBook": "nightelf/spells/summonTreabeard-iconbook",
+			"iconScroll": "nightelf/spells/summonTreabeard-iconscroll",
+			"iconScenarioBonus": "nightelf/spells/summonTreabeard-iconscenario",
+			"iconEffect": "nightelf/spells/summonTreabeard-iconeffect"
+		},
+		"animation":
+		{
+		},
+		"sounds":
+		{
+			"cast": "SUMNELM"
+		},
+		"levels":
+	    {
+			"base":
+			{
+				"description": "{召唤树芒}\r\n\r\n召唤一定数量的暗夜树芒参战。",
+				"power": 18,
+				"aiValue": 10,
+				"cost": 30,
+				"range": "X",
+				"targetModifier":{"smart":true},
+				"battleEffects":{
+					"summon":{
+						"exclusive":true,
+						"id":"nelftreebeard",
+						"permanent":false,
+						"summonByHealth" : true,
+						"type":"core:summon"
+					}
+				}				
+			},		
+			"none":
+			{
+			},
+			"basic":
+			{
+				"power": 18
+			},
+			"advanced":
+			{
+				"power": 36
+			},
+			"expert":
+			{
+				"power": 54
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"nelfssin" :
+	{
+		"class" : "nelfwarden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "赛斯",
+			"biography" : "赛斯虽然是一个精灵，她对元素的掌控超过她的同族，这让她可以比任何人更好的利用魔法杀伤敌人，更好地掌控它们令人恐惧的能力。",
+			"specialty" :
+			{
+				"description" : "在魔力上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：魔力",
+				"name" : "魔力"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/ssin/un32sorc.bmp",
+			"specialtyLarge" : "nightelf/heroes/ssin/un44sorc.bmp",
+			"large" : "nightelf/heroes/ssin/hpl297.bmp",
+			"small" : "nightelf/heroes/ssin/hps297.bmp"
+		},
+
+		"spellbook" :
+		[
+			"shield"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		"specialty": 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

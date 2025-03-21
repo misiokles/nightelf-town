@@ -1,0 +1,7 @@
+{
+    "basepath" : "nightelf/town-screen/buildings/frames/",
+	"images" :
+	[
+		{ "frame" : 0, "file" : "33dw_3"}
+	]
+}

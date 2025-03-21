@@ -1,0 +1,73 @@
+{
+	"nelfnightdruid":
+	{
+		"name" :
+		{
+			"plural" : "暗夜德鲁伊",
+			"singular" : "暗夜德鲁伊"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 10
+		},
+		"faction" : "nightelf",
+		"aiValue" : 501,
+		"attack" : 12,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			"max" : 12,
+			"min" : 7
+		},
+		"defense" : 12,
+		"fightValue" : 490,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR285.def",
+			"map" : "nightelf/map/AvW285.def",
+			"iconSmall" : "nightelf/iconsSmall/CPRS285G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL285G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 0.5
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 30,
+		"level" : 4,
+		"upgrades":
+		[
+			"nelfelderdruid"
+		],
+		"sound" :
+		{
+			"attack" : "nightelf/druid/druiattk.wav",
+			"defend" : "nightelf/druid/druidfnd.wav",
+			"killed" : "nightelf/druid/druikill.wav",
+			"move" : "nightelf/druid/druimove.wav",
+			"wince" : "nightelf/druid/druiwnce.wav",
+ 		},
+		"speed" : 7,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 20,
+				"addInfo" : [1, 2]
+			}
+		}
+	}
+}

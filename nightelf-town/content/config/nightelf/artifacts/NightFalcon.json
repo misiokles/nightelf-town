@@ -1,0 +1,23 @@
+{
+	"nelfnightFalcon":
+        {
+	"type" : ["HERO"],
+	"warMachine":"nelfnightFalcon",
+        "class": "SPECIAL",
+        "value": 3500,
+        "slot":"MACH1",
+        "text":
+		{
+			"name": "夜隼车",
+			"description": "{夜隼车}\r\n\r\n这个强大的战争机器可以使远处的目标瘫痪。",
+			"event": "突破沼泽和灌木丛后，你不会想到能遇到一台废弃的战争机器。你环顾四周是否有任何人，随后将它纳入军队装备。"
+		},
+		"graphics":
+		{
+			"image": "nightelf/iconsSmall/artifacts/falcon.bmp",
+			"map"  : "nightelf/map/artifacts/blank.def"
+		}
+	}
+}
+
+

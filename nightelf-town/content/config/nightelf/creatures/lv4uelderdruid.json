@@ -1,0 +1,79 @@
+{
+	"nelfelderdruid":
+	{
+		"name" :
+		{
+			"plural" : "德鲁伊长老",
+			"singular" : "德鲁伊长老"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction" : "nightelf",
+		"aiValue" : 679,
+		"attack" : 13,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"damage" :
+		{
+			"max" : 13,
+			"min" : 8
+		},
+		"defense" : 13,
+		"fightValue" : 644,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR286.def",
+			"map" : "nightelf/map/AvW286.def",
+			"iconSmall" : "nightelf/iconsSmall/CPRS286G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL286G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 0.5
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 35,
+		"level" : 4,
+		"sound" :
+		{
+			"attack" : "nightelf/druid/druiattk.wav",
+			"defend" : "nightelf/druid/druidfnd.wav",
+			"killed" : "nightelf/druid/druikill.wav",
+			"move" : "nightelf/druid/druimove.wav",
+			"wince" : "nightelf/druid/druiwnce.wav",
+ 		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 20,
+				"addInfo" : [1, 2]
+			},
+			"randomSpellcaster" :
+			{
+				"type" : "RANDOM_SPELLCASTER",
+				"val" : 2
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			}
+		}
+	}
+}

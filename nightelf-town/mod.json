@@ -1,0 +1,77 @@
+{
+	"name" : "nightelf",
+	"description" : "New town made by New nightelf Team & Trith",
+	"author" : "New nightelf Team & Trith, mod : Kuririn & Pointer, fixes: avatar, Alyx182008",
+	"contact" : "http://www.nightelftown.acidcave.net/indexen.htm",
+	"version" : "1.16",
+	"modType" : "Town",	
+	"depends" : ["newtown-terrains.heatherThicket" ], 
+	"factions" : ["config/nightelf/town"],
+	"language": "chinese",
+	"chinese": {
+		"name": "暗夜精灵",
+		"description": "新城镇暗夜精灵，由望月鸣神天大佬制作。"
+	},
+	"creatures" :
+	[
+		"config/nightelf/creatures/lv1satyr.json",
+		"config/nightelf/creatures/lv1ufaun.json",
+		"config/nightelf/creatures/lv2moonhunter.json",
+		"config/nightelf/creatures/lv2umoonslayer.json",
+		"config/nightelf/creatures/lv3groveguard.json",
+		"config/nightelf/creatures/lv3ugrovekeeper.json",
+		"config/nightelf/creatures/lv4nightdruid.json",
+		"config/nightelf/creatures/lv4uelderdruid.json",
+		"config/nightelf/creatures/lv5basiliskrider.json",
+		"config/nightelf/creatures/lv5ubasiliskchampion.json",
+		"config/nightelf/creatures/lv6spiderprincess.json",
+		"config/nightelf/creatures/lv6uspiderqueen.json",
+		"config/nightelf/creatures/lv7quartzdragon.json",
+		"config/nightelf/creatures/lv7uamethystdragon.json",
+		"config/nightelf/creatures/lv7u2saphiredragon.json",
+		"config/nightelf/creatures/nelftreebeard.json",
+		"config/nightelf/creatures/nightFalcon.json",
+		"config/nightelf/commander/nightstalker.json",
+		"config/nightelf/creatures/stack_exp.json"
+	],
+    "artifacts":
+    [              
+        "config/nightelf/artifacts/NightFalcon.json"        
+    ],
+	
+	"heroClasses" : 
+	[
+		"config/nightelf/classes/dwarden.json", 
+		"config/nightelf/classes/dhunter.json"
+	],
+
+	"heroes" :
+	[
+		"config/nightelf/heroes/artehel.json",
+		"config/nightelf/heroes/kyorlin.json",
+		"config/nightelf/heroes/malla.json",
+		"config/nightelf/heroes/mrimm.json",
+		"config/nightelf/heroes/olath.json",
+		"config/nightelf/heroes/phindara.json",
+		"config/nightelf/heroes/sargh.json",
+		"config/nightelf/heroes/shebali.json",
+		"config/nightelf/heroes/sithyrr.json",
+		"config/nightelf/heroes/ssin.json",
+		"config/nightelf/heroes/suliss.json",
+		"config/nightelf/heroes/tuidhana.json",
+		"config/nightelf/heroes/ultrin.json",
+		"config/nightelf/heroes/velkyn.json",
+		"config/nightelf/heroes/velve.json",
+		"config/nightelf/heroes/vlos.json",
+		"config/nightelf/heroes/wanre.json"
+	],
+	"objects" : 
+	[ 
+		"config/nightelf/dwellings"		
+	],
+	
+	"spells" :
+	[
+		"config/nightelf/spells/summonNelftreebeard.json"
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"nelfvlos" :
+	{
+		"class" : "nelfwarden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "弗洛斯",
+			"biography" : "弗洛斯拥有锐利的眼睛，她可以侦察到敌人的信息。",
+			"specialty" :
+			{
+				"description" : "在急救术上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：急救术",
+				"name" : "急救术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/vlos/un32firs.bmp",
+			"specialtyLarge" : "nightelf/heroes/vlos/un44firs.bmp",
+			"large" : "nightelf/heroes/vlos/hpl295.bmp",
+			"small" : "nightelf/heroes/vlos/hps295.bmp",
+		},
+
+		"spellbook" :
+		[
+			"slow"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "firstAidTent",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"firstAid" : {
+					"subtype" : "core:spell.firstAid",
+	                "targetSourceType" : "SECONDARY_SKILL",
+	                "type" : "SPECIFIC_SPELL_POWER",
+	                "valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

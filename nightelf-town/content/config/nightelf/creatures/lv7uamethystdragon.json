@@ -1,0 +1,121 @@
+{
+	"nelfamethyst":
+	{
+		"name" :
+		{
+			"plural" : "黑暗树妖",
+			"singular" : "黑暗树妖"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction" : "nightelf",
+		"aiValue" : 6335,
+		"attack" : 20,
+		"upgrades" : ["nelfsaphiredragon"],
+		"cost" :
+		{
+			"gold" : 4500,
+			"crystal" : 2
+		},
+		"damage" :
+		{
+			"max" : 45,
+			"min" : 35
+		},
+		"defense" : 25,
+		"fightValue" : 5090,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR292.DEF",
+			"map" : "nightelf/map/AVW292.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS292G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL292G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"growth" : 1,
+		"hitPoints" : 295,
+		"level" : 7,
+		"sound" :
+		{
+			"attack" : "nightelf/dragon/gdrgattk.wav",
+			"defend" : "nightelf/dragon/gdrgdfnd.wav",
+			"killed" : "nightelf/dragon/gdrgkill.wav",
+			"move" : "nightelf/dragon/gdrgmove.wav",
+			"wince" : "nightelf/dragon/gdrgwnce.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 50
+			},
+			"king1" :
+			{
+				"type" : "KING",
+	            "val" : 0
+			},
+			"castsCure" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.cure",
+				"val" : 3,
+				"addInfo" : 3
+			},
+			"rebirth" : 
+			{
+				"type" : "REBIRTH",
+				"val" : 15
+			},
+			"drainsMana" :
+			{
+				"type" : "MANA_DRAIN",	
+				"val" : 2	
+			},
+			"healer" :
+			{
+				"type" : "HEALER"
+			},
+			"resurrection100hp" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.resurrection",
+				"val" : 100
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.resurrection",
+				"val" : 3
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.cure",	
+				"val" : 3	
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 4
+			},
+			"magicResistance" :
+			{
+				"subtype" : "spellSchool.any",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+			}
+		}
+	}
+}

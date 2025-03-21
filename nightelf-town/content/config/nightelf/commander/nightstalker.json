@@ -1,0 +1,112 @@
+{
+	"nelfnightstalker":
+	{
+		"name" :
+		{
+			"plural" : "典狱长",
+			"singular" : "典狱长"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"faction" : "neutral",
+		"level": 0,
+		"aiValue" : 1000,
+		"special" : true,
+		"attack" : 5,
+		"damage" :
+		{
+			"max" : 10,
+			"min" : 10
+		},
+		"defense" : 5,
+		"fightValue" : 1000,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/zm181npc.def",
+			"map" : "nightelf/map/zmm181n.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS190n.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL190N.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "nightelf/battle/projectile/shot283.def",
+				"attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+
+			}
+		},
+		"doubleWide" : false,
+		"growth" : 9,
+		"hasDoubleWeek": false,
+		"hitPoints" : 50,
+		"shots"	: 24,
+		"sound" :
+		{
+			"attack": "BTREATTK.wav",
+			"defend": "BTREDFND.wav",
+			"killed": "BTREKILL.wav",
+			"move": "BTREMOVE.wav",
+			"wince": "BTREWNCE.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.cure",
+				"val" : 3
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		}
+	}
+}

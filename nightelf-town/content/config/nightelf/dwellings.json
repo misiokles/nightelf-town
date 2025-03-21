@@ -1,0 +1,113 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"nelfcedarHalls" : {
+				"name" : "暗夜之屋",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell1loop.wav"]
+				},
+				"creatures" : [[ "nelffaun" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw1.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"nelfhuntersGuild" : {
+				"name" : "暗夜行会",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell2loop.wav"]
+				},
+				"creatures" : [[ "nelfmoonhunter" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw2.def",
+						"mask" : [ "VVV", "VBV", "VAB" ]
+					}
+				}
+			},
+			"nelfredwoodSpires" : {
+				"name" : "暗夜树塔",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell3loop.wav"]
+				},
+				"creatures" : [[ "nelfnightelfguard" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "nightelf/map/dw3.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			},
+			"nelfcaveOfDreams" : {
+				"name" : "魔法公会",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell4loop.wav"]
+				},
+				"creatures" : [[ "nelfnightdruid" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw4.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			},
+			"nelfwitchingHollow" : {
+				"name" : "夜行乐园",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell5loop.wav"]
+				},
+				"creatures" : [[ "nelfbasiliskrider" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw5.def",
+						"mask" : [ "VV", "VV", "VVVV", "VVV", "BA" ]
+					}
+				}
+			},
+			"nelfroyalChambers" : {
+				"name" : "暗夜议会",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell6loop.wav"]
+				},
+				"creatures" : [[ "nelfspiderprincess" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw6.def",
+						"mask" : [ "VVV", "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"nelfquartzFortress" : {
+				"name" : "暗夜之树",
+				"creatures" : [[ "nelfquartzdragon" ]],
+				"sounds": {
+					"ambient": ["nightelf/dwellings/dwell7loop.wav"]
+				},
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw7.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"nelfprimevalPeatbog" : {
+				"name" : "暗夜树沼",
+				"sounds": {
+					"ambient": ["nightelf/dwellings/peatbogloop.wav"]
+				},
+				"creatures" : [[ "nelftreebeard" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "nightelf/map/dw8.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			}
+		}		
+	}
+}

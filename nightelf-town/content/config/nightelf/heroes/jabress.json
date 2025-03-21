@@ -1,0 +1,66 @@
+{
+	"nelfjabress" :
+	{
+		"class" : "nelfwarden",
+		"female" : true,		
+		"texts" :
+		{
+			"name" : "加布里斯",
+			"biography" : "加布里斯年青时大部分时间花在学习黑暗魔法上，后来她意识到这样只会毁了她自己。如今她把心思放在了航海魔法上，她的部队可以在水上行走。",
+			"specialty" :
+			{
+				"description" : "初始拥有凌波微步魔法，英雄海上移动力增加500，。",
+				"tooltip" : "魔法增强：凌波微步",
+				"name" : "凌波微步"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/jabress/un32weak.bmp",
+			"specialtyLarge" : "nightelf/heroes/jabress/un44weak.bmp",
+			"large" : "nightelf/heroes/jabress/portrait-large.bmp",
+			"small" : "nightelf/heroes/jabress/portrait-small.bmp",
+		},
+		
+		"spellbook" :
+		[
+			"waterWalk"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"navigationseaBoost" :{
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 500
+				}
+			}
+		}
+	}
+}

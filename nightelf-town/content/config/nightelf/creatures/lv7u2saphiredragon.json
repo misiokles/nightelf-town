@@ -1,0 +1,140 @@
+{
+	"nelfsaphiredragon":
+	{
+		"name" :
+		{
+			"plural" : "黑暗古树",
+			"singular" : "黑暗古树"
+		},
+		"advMapAmount" :
+		{
+			"max" : 5,
+			"min" : 2
+		},
+		"faction" : "nightelf",
+		"aiValue" : 17750,
+		"attack" : 22,
+		"cost" :
+		{
+			"gold" : 10000,
+			"crystal" : 4
+		},
+		"damage" :
+		{
+			"max" : 70,
+			"min" : 55
+		},
+		"defense" : 40,
+		"fightValue" : 15750,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR293.DEF",
+			"map" : "nightelf/map/AVW293.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS293G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL293G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"growth" : 1,
+		"hitPoints" : 450,
+		"level" : 7,
+		"sound" :
+		{
+			"attack" : "nightelf/dragon/gdrgattk.wav",
+			"defend" : "nightelf/dragon/gdrgdfnd.wav",
+			"killed" : "nightelf/dragon/gdrgkill.wav",
+			"move" : "nightelf/dragon/gdrgmove.wav",
+			"wince" : "nightelf/dragon/gdrgwnce.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"FLYING_ARMY" :
+			{
+				"type": "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+			"regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 100
+			},
+			"king1" :
+			{
+				"type" : "KING",
+	            "val" : 0
+			},
+			"resurrection100hp" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.resurrection",
+				"val" : 100
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.resurrection",
+				"val" : 3
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.cure",	
+				"val" : 3	
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},
+			"castsCure" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.cure",
+				"val" : 3,
+				"addInfo" : 3
+			},
+			"rebirth" : 
+			{
+				"type" : "REBIRTH",
+				"val" : 20
+			},
+			"drainsMana" :
+			{
+				"type" : "MANA_DRAIN",	
+				"val" : 2	
+			},
+			"spellsLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 5
+			},
+            "randomSpellcaster" :
+			{
+				"type" : "RANDOM_SPELLCASTER",
+				"val" : 2
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"healer" :
+			{
+				"type" : "HEALER"
+			},
+			"magicResistance" :
+			{
+				"subtype" : "spellSchool.any",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+			}
+		}
+	}
+}

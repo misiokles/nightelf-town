@@ -1,0 +1,64 @@
+{
+	"nelfsuliss" :
+	{
+		"class" : "nelfwarden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "萨里斯",
+			"biography" : "萨里斯的祖母专门调解暗夜精灵各部族间的矛盾，但萨里斯却走上了魔法之路。",
+			"specialty" :
+			{
+				"description" : "开始时就懂得所有1级魔法。",
+				"tooltip" : "特殊奖励：神秘先知",
+				"name" : "神秘先知"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/suliss/Un32Scri.bmp",
+			"specialtyLarge" : "nightelf/heroes/suliss/Un44Scri.bmp",
+			"large" : "nightelf/heroes/suliss/hpl293.bmp",
+			"small" : "nightelf/heroes/suliss/hps293.bmp",
+		},
+		
+		"spellbook" :
+		[
+			"viewEarth", "bloodlust", "cure", "curse", "dispel", "bless", "haste", "magicArrow", "protectFire", "protectWater", "shield", "slow", "summonBoat", "stoneSkin", "viewAir" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		"specialty" : { "bonuses" : {  } } // has expert fire magic as "specialty"
+				//specialty//???
+	}
+}

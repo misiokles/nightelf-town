@@ -1,0 +1,61 @@
+{
+	"nelfphindara" :
+	{
+		"class" : "nelfhunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "菲达拉",
+			"biography" : "菲达拉虽然是一名女性，但却对战术十分感兴趣，展现出了极高的天赋。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高夜行者或夜骑士的攻击力与防御力。",
+				"tooltip" : "生物强化：夜行者",
+				"name" : "夜行者"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/phindara/un32bsrd.bmp",
+			"specialtyLarge" : "nightelf/heroes/phindara/un44bsrd.bmp",
+			"large" : "nightelf/heroes/phindara/hpl288.bmp",
+			"small" : "nightelf/heroes/phindara/hps288.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "nelfmoonhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		"specialty" : {
+			"creature" : "nelfbasiliskrider"
+		}		
+	}
+}

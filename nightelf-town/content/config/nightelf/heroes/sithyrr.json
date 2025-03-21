@@ -1,0 +1,62 @@
+{
+	"nelfsithyrr" :
+	{
+		"class" : "nelfhunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "希蒂尔",
+			"biography" : "希蒂尔与马拉是优秀的搭档，她研究的是建筑工程学。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "生物强化：弩车",
+				"name" : "弩车"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "nightelf/heroes/sithyrr/un32ball.bmp",
+			"specialtyLarge" : "nightelf/heroes/sithyrr/un44ball.bmp",
+			"large" : "nightelf/heroes/sithyrr/hpl290.bmp",
+			"small" : "nightelf/heroes/sithyrr/hps290.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "nelffaun",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "nelfnightelfguard",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "ballista"
+		}
+	}
+}

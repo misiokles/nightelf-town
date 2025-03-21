@@ -1,0 +1,95 @@
+{
+	"nelfquartzdragon":
+	{
+		"name" :
+		{
+			"plural" : "黑暗树人",
+			"singular" : "黑暗树人"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "nightelf",
+		"aiValue" : 4450,
+		"attack" : 18,
+		"cost" :
+		{
+			"gold" : 2500,
+			"crystal" : 1
+		},
+		"damage" :
+		{
+			 "max" : 45,
+			 "min" : 35
+		},
+		"defense" : 22,
+		"fightValue" : 3504,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR291.DEF",
+			"map" : "nightelf/map/AVW291.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS291G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL291G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"growth" : 1,
+		"hitPoints" : 225,
+		"level" : 7,
+		"upgrades":
+		[
+			"nelfamethyst"
+		],
+		"sound" :
+		{
+			"attack" : "nightelf/dragon/gdrgattk.wav",
+			"defend" : "nightelf/dragon/gdrgdfnd.wav",
+			"killed" : "nightelf/dragon/gdrgkill.wav",
+			"move" : "nightelf/dragon/gdrgmove.wav",
+			"wince" : "nightelf/dragon/gdrgwnce.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 30
+			},
+			"king1" :
+			{
+				"type" : "KING",
+	            "val" : 0
+			},
+			"healer" :
+			{
+				"type" : "HEALER"
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.cure",	
+				"val" : 3	
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"magicResistance" :
+			{
+				"subtype" : "spellSchool.any",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+			}
+		}
+	}
+}

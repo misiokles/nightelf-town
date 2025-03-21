@@ -1,0 +1,72 @@
+{
+	"nelfbasiliskrider":
+	{
+		"name" :
+		{
+			"plural" : "夜行者",
+			"singular" : "夜行者"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"faction" : "nightelf",
+		"aiValue" : 1045,
+		"attack" : 14,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"damage" :
+		{
+			 "max" : 15,
+			 "min" : 13
+		},
+		"defense" : 12,
+		"fightValue" : 939,
+		"graphics" :
+		{
+			"animation" : "nightelf/battle/CR287.def",
+			"map" : "nightelf/map/AVW287.def",
+			"iconSmall" : "nightelf/iconsSmall/CPrS287G.bmp",
+			"iconLarge" : "nightelf/iconsBig/CPrL287G.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.7,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+        },
+		"doubleWide" : true,
+		"growth" : 3,
+		"hitPoints" : 60,
+		"level" : 5,
+		"upgrades":
+		[
+			"nelfbasiliskchampion"
+		],
+		"sound" :
+		{
+			"attack" : "nightelf/basilisk/bsrdattk.wav",
+			"defend" : "nightelf/basilisk/bsrddfnd.wav",
+			"killed" : "nightelf/basilisk/bsrdkill.wav",
+			"move" : "nightelf/basilisk/bsrdmove.wav",
+			"wince" : "nightelf/basilisk/bsrdwnce.wav"
+		},
+		"speed" : 11,
+		"abilities":
+		{
+			 "noRetalitation" :	
+			{
+				 "type" : "BLOCKS_RETALIATION"
+			},
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			}
+		}	
+	}
+}

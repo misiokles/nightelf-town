@@ -1,0 +1,35 @@
+{
+// "special" heroes for new towns
+	"core:dracon":
+	{
+		"specialty" : {
+			"base" : {
+				"addInfo" : "creature.enchanter",
+				"type" : "SPECIAL_UPGRADE"
+			},
+			"bonuses" : {
+				"nelfnightdruid2enchanter" : { "subtype" : "creature.nelfnightdruid" },
+				"nelfelderdruid2enchanter" : { "subtype" : "creature.nelfelderdruid" },
+			}
+		},
+	},
+	"core:ryland":
+	{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "nelftreebeard", true ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+	}
+}
